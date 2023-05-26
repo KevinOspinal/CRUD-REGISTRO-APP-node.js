@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/styles.css" rel="stylesheet" type="text/css">
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <title>Inicio</title>
+    </head>
+    <body>
+        <div class="container">
+            <img src="./img/logo.png" class="mx-auto d-block" style="margin-top: 100px; width: 14rem;" alt="logo">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-12">
+                    <h1>Ingresar</h1> <br>
+                </div>
+                <div class="col-md-6">
+                        <div>
+                            <form action="/login" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Correo Electronico" id="usuario" name="usuario" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" placeholder="Contraseña" class="form-control" id="contrasena" name="contrasena" required>
+                                </div>
+                                <div class="form-group text-center">
+                                    <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox">
+                                    <label class="form-check-label" for="checkbox">Recuérdame</label>
+                                </div>
+                                <a href="./index.html"><button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button></a>
+                                <br>
+                                <div class="form-group">
+                                    <a href="./index.html"><button type="button" class="btn btn-primary btn-block">Volver</button>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

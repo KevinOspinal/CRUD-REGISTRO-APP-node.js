@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/styles.css" rel="stylesheet" type="text/css">
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+
+        <title>Inicio</title>
+    </head>
+    <body>
+        <div class="container">
+            <img src="./img/logo.png" class="mx-auto d-block" style="margin-top: 50px; width: 14rem;" alt="logo">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-12">
+                    <h1>Registro</h1> <br>
+                </div>
+                <div class="col-md-6">
+                        <div>
+                            <form action="/datosRegistro" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Correo Electronico" id="usuario" name="correo" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" placeholder="Contraseña" onkeyup="Validar()" class="form-control" id="contrasena" name="contrasena" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" onpaste="return false;" onkeyup="Validar()" placeholder="Confirmar Contraseña" class="form-control" id="confirm-contrasena" name="confirm-contrasena" required>
+                                </div>
+                                <button type="submit" id="btnRegistrar" class="btn btn-primary btn-block" onclick="Registrar()" disabled="disabled" >Registrar</button>
+                                <br>
+                                <div class="form-group">
+                                    <a href="./index.html"><button type="button" class="btn btn-primary btn-block">Volver</button>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="popover-password">
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <span class="low-upper-case">
+                                <i class="fas fa-circle"></i>
+                                &nbsp;Minusculas y MAYÚSCULAS
+                            </span>
+                        </li>
+                        <li class="">
+                            <span class="one-special-char">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Caracteres especiales (!@#$%^&*)
+                            </span>
+                        </li>
+                        <li class="">
+                            <span class="one-number">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Numero (0-9)
+                            </span>
+                        </li>
+                        <li class="">
+                            <span class="eight-character">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Mínimo 6 caracteres
+                            </span>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group text-center" style="margin-top: 20px;">
+                CREADO POR KEVIN ACEVEDO (2023) ©
+            </div> 
+        </div>
+        <script src="./js/registro.js"></script>
+    </body>
+</html>
